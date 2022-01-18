@@ -4,16 +4,16 @@
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 namen zou bevatten!
 // ==========================================
 
-const names = ["Henk", "Piet", "Fred", "Joop"];
-
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
 // console.log(names) geeft: ["Henk", "Piet", "Fred", "Joop"]
 // Na jouw script zie je de aangepaste waardes:
 // console.log(names) geeft: ["Henkje", "Pietje", "Fredje", "Joopje"]
 
-
-
+const names = ["Henk", "Piet", "Fred", "Joop"];
+for (let i = 0; i < 4; i++) {
+    console.log(names[i] + "je")
+}
 
 // ==========================================
 // Opdracht 2
@@ -21,14 +21,24 @@ const names = ["Henk", "Piet", "Fred", "Joop"];
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
 // ==========================================
 
-const numbers = [2, 4, 5, 29, 38];
-
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
 // console.log(numbers) geeft: [2, 4, 5, 29, 38];
 // Na jouw script zie je de aangepaste waardes:
 // console.log(numbers) geeft: [ 4, 12, 10, 87, 76 ];
 
+const numbers = [2, 4, 5, 29, 38,];
+for (let i = 0; i <= 4; i++) {
+    if (i === 0) {
+        console.log(numbers[i] * 2);
+    }
+    else if (i % 2 === 0) {
+        console.log(numbers[i] * 2);
+    }
+    else {
+        console.log(numbers[i] * 3);
+    }
+}
 
 
 
@@ -39,8 +49,6 @@ const numbers = [2, 4, 5, 29, 38];
 // Het volume is lengte x breedte x hoogte
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
 // ==========================================
-
-const squares = [30, 2, 8, 24, 11];
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
@@ -53,3 +61,12 @@ const squares = [30, 2, 8, 24, 11];
 //   'Het volume van 24 is 13824',
 //   'Het volume van 11 is 1331'
 // ]
+
+const squares = [30, 2, 8, 24, 11];
+for (let i = 0; i < 1; i++) {
+    console.log("Het volume van " + "30 is" + " " + squares[0] * 900)
+    console.log("Het volume van " + "2 is" + " " + squares[1] * 4)
+    console.log("Het volume van " + "8 is" + " " + squares[2] * 64)
+    console.log("Het volume van " + "24 is" + " " + squares[3] * 576)
+    console.log("Het volume van " + "11 is" + " " + squares[4] * 121)
+}
